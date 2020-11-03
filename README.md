@@ -4,7 +4,7 @@ A lexical analyzer that can identify lexemes and tokens found in a source code f
 
 Author: Mostofa Adib Shakib
 
-BNF Grammer Rule:
+BNF Grammer Rule
 
     P   ::=     S
     S   ::=     V:=E | read(V) | write(V) | while C do S od | S;S
@@ -18,26 +18,27 @@ BNF Grammer Rule:
 
 Lexeme & Token Pair
 
+
     |      Lexeme      |     Token     |
     | ---------------  | ------------- |
     |       :=         |  ASSIGN_OP    |
     |       +          |  ADD_OP       |
-    |      do          | KEY_DO        |
-    |      <           | LESSER_OP     |
-    |      -           | SUB_OP        |
-    |      od          | KEY_OD        |
-    |       >          | GREATER_OP    |
+    |       do         |  KEY_DO       |
+    |       <          |  LESSER_OP    |
+    |       -          |  SUB_OP       |
+    |       od         |  KEY_OD       |
+    |       >          |  GREATER_OP   |
     |       *          |  MULT_OP      |
-    | variable name    |  IDENT        |
+    |   variable name  |  IDENT        |
     |       =          |  EQUAL_OP     |
     |       /          |  DIV_OP       |
-    |   integer        |  INT_LIT      |
-    |   <>             |  NEQUAL_OP    |
-    |   read           |  KEY_READ     |
-    |   (              |  LEFT_PAREN   |
-    |   <=             |  LEQUAL_OP    |
-    |   write          |  KEY_WRITE    |
-    |   )              |  RIGHT_PAREN  |
-    |   >=             |  GEQUAL_OP    |
-    |   while          |  KEY_WHILE    |
-    |   ;              |  SEMICOLON    |
+    |     integer      |  INT_LIT      |
+    |       <>         |  NEQUAL_OP    |
+    |      read        |  KEY_READ     |
+    |       (          |  LEFT_PAREN   |
+    |       <=         |  LEQUAL_OP    |
+    |     write        |  KEY_WRITE    |
+    |       )          |  RIGHT_PAREN  |
+    |      >=          |  GEQUAL_OP    |
+    |     while        |  KEY_WHILE    |
+    |       ;          |  SEMICOLON    |
